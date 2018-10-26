@@ -1,0 +1,20 @@
+{
+  "name": "movieapp-wdi18-p2",
+  "version": "1.0.0",
+  "description": "WDI project 2 showing knowledge of back end and data modeling",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KGreen66/MovieApp-WDI18-P2.git"
+  },
+  "author": "Keith Green",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KGreen66/MovieApp-WDI18-P2/issues"
+  },
+  "homepage": "https://github.com/KGreen66/MovieApp-WDI18-P2#readme"
+}
