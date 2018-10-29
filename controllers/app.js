@@ -1,5 +1,6 @@
 const Actor = require('../models/Actor')
 const Director = require('../models/Director')
+const Movie = require('../models/Movie')
 
 const applicationController = {
     index: (req, res) => {
