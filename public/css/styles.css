@@ -1,0 +1,29 @@
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav h1 {
+    font-size: 30px;
+}
+
+nav h3 {
+    margin-top: 30px;
+}
+
+img {
+    height: 30%;
+    width: auto;
+}
+
+.movie-container {
+    margin: 5px;
+    display: inline-block;
+    border: 5px solid black;
+    border-radius: 8px;
+}

@@ -1,0 +1,15 @@
+<main>
+    <h2>Movie Index</h2>
+
+    {{#each movies}}
+        <div class="movie-container">
+            <a href="/{{_id}}"><img src="{{img}}" alt=""></a>
+            <div class="movie-container-info">
+                <a href="/{{_id}}"><h3>{{name}}</h3></a>
+                <p>{{release}}</p>
+                <p>{{rating}}</p>
+            </div>
+        </div>
+    {{/each}}
+    
+</main>
