@@ -10,12 +10,12 @@ const robertDowney = new Actor({
     movies: `movies go here`
 })
 
-const ryanReynolds = new Actor({
-    name: "Ryan Reynolds",
-    bio: "bio goes here",
-    img: "https://i.imgur.com/hHOLnLi.jpg",
-    movies: "movies go here"
-})
+// const ryanReynolds = new Actor({
+//     name: "Ryan Reynolds",
+//     bio: "bio goes here",
+//     img: "https://i.imgur.com/hHOLnLi.jpg",
+//     movies: "movies go here"
+// })
 
 const markRuffalo = new Actor({
     name: "Mark Ruffalo",
@@ -203,3 +203,21 @@ const guardiansTwo = new Movie({
     actors: [zoeSaldana]
 })
 
+Director.remove()
+
+Actor.remove()
+
+Movie.remove({})
+    .then(() => Director.insertMany([joeRusso, jonFavreau, anthonyRusso, jamesGunn, jossWhedon]))
+    .then(() => Actor.insertMany([tomHiddleston, robertDowney, chrisEvans, chrisHemsworth, scarlettJohannson, zoeSaldana, markRuffalo, donCheadle, elizabethOlsen, benedictCumberbatch]))
+    .then(() => guardians.save())
+    .then(() => guardiansTwo.save())
+    .then(() => avengersInfinityWar.save())
+    .then(() => avengers.save())
+    .then(() => avengersAoA.save())
+    .then(() => captainWinterSoldier.save())
+    .then(() => captainCivilWar.save())
+    .then(() => ironMan.save())
+    .then(() => ironManTwo.save())
+    .then(() => console.log("Database seeded success"))
+    .then(() => mongoose.connection.close())
