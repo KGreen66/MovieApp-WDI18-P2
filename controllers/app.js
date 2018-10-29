@@ -12,7 +12,7 @@ const applicationController = {
             })
     },
     show: (req, res) => {
-        Movie.findById(req.params.movieId).then(movie => {
+        Movie.findById(req.params.movieId).populate('actors', 'name').populate('director', 'name').then(movie => {
             res.render('movies/show', {movie: movie})
           })
     },
@@ -24,13 +24,19 @@ const applicationController = {
             res.redirect(`/${newMovie._id}`))
     },
     edit: (req, res) => {
-        res.send('edit movie here')
+        Movie.findById(req.params.movieId).then(movie => {
+            res.render('movies/edit', {movie: movie})
+        })
     },
     update: (req, res) => {
-        res.send('update magic')
+        Movie.findByIdAndUpdate(req.params.movieId, req.body).then(updatedMovie => {
+            res.redirect(`/${updatedMovie}`)
+        })
     },
     delete: (req, res) => {
-        res.send('delete this')
+        Movie.findByIdAndDelete(req.params.movieId).then(() => {
+            res.redirect('/')
+        })
     }
 }
 
