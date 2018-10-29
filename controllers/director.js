@@ -4,25 +4,37 @@ const Movie = require('../models/Movie')
 
 const directorController = {
     index: (req, res) => {
-        res.send('this is main index')
+        Director.find()
+            .then(directors => {
+                res.render('/directors', {directors: directors})
+            })
     },
     show: (req, res) => {
-        res.send('this is show director page')
+        Director.findById(req.params.directorId).populate('movies', 'name').then(director => {
+            res.render('/directors/show', {director: director})
+        })
     },
     new: (req, res) => {
-        res.send('create a new director')
+        res.render('/directors/new')
     },
     create: (req, res) => {
-        res.send('magic')
+        Director.create(req.body).then(newDirector =>
+            res.redirect(`/${newDirector._id}`))
     },
     edit: (req, res) => {
-        res.send('edit director here')
+        Director.findById(req.params.directorId).then(director => {
+            res.render(`/directors/edit`, {director: director})
+        })
     },
     update: (req, res) => {
-        res.send('update magic')
+        Director.findByIdAndUpdate(req.params.directorId, req.body).then(updatedDirector => {
+            res.redirect(`/directors/${updatedDirector}`)
+        })
     },
     delete: (req, res) => {
-        res.send('delete this')
+        Director.findByIdAndDelete(req.params.directorId).then(() => {
+            res.redirect('/directors')
+        })
     }
 }
 

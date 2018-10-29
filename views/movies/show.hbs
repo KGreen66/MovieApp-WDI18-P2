@@ -11,7 +11,9 @@
         <p>Cast: {{movie.actors}} </p>
     </div>
     <div class="movie-show-functions">
-        <button>Edit this movie</button>
-        <button>Delete this movie</button>
+        <a href="/{{movie._id}}/edit"><button>Edit this movie</button></a>
+	    <form action="/recipe/{{movie._id}}?_method=DELETE" method="POST">
+	        <button type="submit">Delete this movie</button>
+	    </form>
     </div>
 </main>

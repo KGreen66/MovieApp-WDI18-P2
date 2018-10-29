@@ -1,0 +1,20 @@
+<main>
+
+	<h2>Edit this movie</h2>
+
+	<div id="edit-form" class="newMovie-container-show">
+
+		<form action="/{{movie._id}}?_method=PUT" method="POST" class="edit-movie">
+			<input type="text" name="name" value="{{movie.name}}">
+			<input type="text" name="description" value="{{movie.description}}">
+			<input type="text" name="release" value="{{movie.release}}">
+			<input type="text" name="rating" value="{{movie.rating}}">				
+            <input type="text" name="img" value="{{movie.img}}">
+            <input type="text" name="director">
+            <input type="text" name="actors">
+
+			<button type="submit">Add Movie</button>
+		</form>
+
+	</div>
+</main>
