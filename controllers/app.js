@@ -4,7 +4,10 @@ const Movie = require('../models/Movie')
 
 const applicationController = {
     index: (req, res) => {
-        res.send('this is main index')
+    Movie.find()
+    .then(movies => {
+      res.render('movies/index', {movies: movies})
+    })
     },
     show: (req, res) => {
         res.send('this is show movie page')
