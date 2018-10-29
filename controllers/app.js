@@ -17,11 +17,11 @@ const applicationController = {
           })
     },
     new: (req, res) => {
-        Movie.create(req.body).then(newMovie =>
-            res.redirect(`/${newMovie._id}`))
+        res.render('movies/new')
     },
     create: (req, res) => {
-        res.send('magic')
+        Movie.create(req.body).then(newMovie =>
+            res.redirect(`/${newMovie._id}`))
     },
     edit: (req, res) => {
         res.send('edit movie here')
