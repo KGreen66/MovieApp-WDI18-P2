@@ -126,7 +126,7 @@ const ironMan = new Movie({
     name: "Iron Man",
     description: "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.",
     release: "2008",
-    img: "",
+    img: "https://i.imgur.com/Iow9q1y.jpg",
     rating: 8,
     director: [jonFavreau],
     actors: [robertDowney]
@@ -136,7 +136,7 @@ const ironManTwo = new Movie({
     name: "Iron Man 2",
     description: "With the world now aware of his identity as Iron Man, Tony Stark must contend with both his declining health and a vengeful mad man with ties to his father's legacy.",
     release: "2010",
-    img: "",
+    img: "https://i.imgur.com/v2Zkf6y.jpg",
     rating: 7.5,
     director: [jonFavreau],
     actors: [robertDowney, donCheadle, scarlettJohannson]
@@ -146,7 +146,7 @@ const avengers = new Movie({
     name: "The Avengers",
     description: "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
     release: "2012",
-    img: "",
+    img: "https://i.imgur.com/zqcNmkq.jpg",
     rating: 8.7,
     director: [jossWhedon],
     actors: [chrisEvans, chrisHemsworth, robertDowney, scarlettJohannson, markRuffalo, tomHiddleston]
@@ -156,7 +156,7 @@ const avengersAoA = new Movie({
     name: "Avengers: Age of Ultron",
     description: "When Tony Stark and Bruce Banner try to jump-start a dormant peacekeeping program called Ultron, things go horribly wrong and it's up to Earth's mightiest heroes to stop the villainous Ultron from enacting his terrible plan.",
     release: "2015",
-    img: "",
+    img: "https://i.imgur.com/xHc0EH7.jpg",
     rating: 8.3,
     director: [jossWhedon],
     actors: [chrisEvans, robertDowney, markRuffalo, scarlettJohannson, chrisHemsworth, donCheadle, elizabethOlsen]
@@ -166,7 +166,7 @@ const captainWinterSoldier = new Movie({
     name: "Captain America: The Winter Soldier",
     description: "As Steve Rogers struggles to embrace his role in the modern world, he teams up with a fellow Avenger and S.H.I.E.L.D agent, Black Widow, to battle a new threat from history: an assassin known as the Winter Soldier.",
     release: "2014",
-    img: "",
+    img: "https://i.imgur.com/xVfI1e5.jpg",
     rating: 8.1,
     director: [anthonyRusso, joeRusso],
     actors: [chrisEvans, scarlettJohannson]
@@ -176,7 +176,7 @@ const captainCivilWar = new Movie({
     name: "Captain America: Civil War",
     description: "Political involvement in the Avengers' activities causes a rift between Captain America and Iron Man.",
     release: "2016",
-    img: "",
+    img: "https://i.imgur.com/IxT9uch.jpg",
     rating: 8.5,
     director: [anthonyRusso, joeRusso],
     actors: [chrisEvans, robertDowney, donCheadle, elizabethOlsen, scarlettJohannson]
@@ -186,7 +186,7 @@ const avengersInfinityWar = new Movie({
     name: "Avengers: Infinty War",
     description: "The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.",
     release: "2018",
-    img: "",
+    img: "https://i.imgur.com/7X08j3f.jpg",
     rating: 9.0,
     director: [anthonyRusso, joeRusso],
     actors: [chrisEvans, chrisHemsworth, zoeSaldana, robertDowney, tomHiddleston, donCheadle, elizabethOlsen, markRuffalo, scarlettJohannson, benedictCumberbatch]
@@ -196,7 +196,7 @@ const guardians = new Movie({
     name: "Guardians of the Galaxy",
     description: "A group of intergalactic criminals are forced to work together to stop a fanatical warrior from taking control of the universe.",
     release: "2014",
-    img: "",
+    img: "https://i.imgur.com/Tw0VcO6.jpg",
     rating: 8.4,
     director: [jamesGunn],
     actors: [zoeSaldana]
@@ -206,7 +206,7 @@ const guardiansTwo = new Movie({
     name: "Guardians of the Galaxy Vol. 2",
     description: "The Guardians must fight to keep their newfound family together as they unravel the mystery of Peter Quill's true parentage.",
     release: "2017",
-    img: "",
+    img: "https://i.imgur.com/7iiqLOz.jpg",
     rating: 8.1,
     director: [jamesGunn],
     actors: [zoeSaldana]
