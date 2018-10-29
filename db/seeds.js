@@ -115,13 +115,91 @@ const jamesGunn = new Director({
     movies: "movies here"
 })
 
-const  = new Director({
-    name: ,
-    bio: "bio goes here",
-    img: ,
-    movies: "movies here"
+// const  = new Director({
+//     name: ,
+//     bio: "bio goes here",
+//     img: ,
+//     movies: "movies here"
+// })
+
+const ironMan = new Movie({
+    name: "Iron Man",
+    description: "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.",
+    img: "",
+    rating: 7.9,
+    director: "director here",
+    actors: "actors here"
 })
 
-const inglorious = new Movie({
-
+const ironManTwo = new Movie({
+    name: "Iron Man 2",
+    description: "With the world now aware of his identity as Iron Man, Tony Stark must contend with both his declining health and a vengeful mad man with ties to his father's legacy.",
+    img: "",
+    rating: 7.3,
+    director: "director here",
+    actors: "actors here"
 })
+
+const avengers = new Movie({
+    name: "The Avengers",
+    description: "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
+    img: "",
+    rating: 8.4,
+    director: "director here",
+    actors: "actors here"
+})
+
+const avengersAoA = new Movie({
+    name: "Avengers: Age of Ultron",
+    description: "When Tony Stark and Bruce Banner try to jump-start a dormant peacekeeping program called Ultron, things go horribly wrong and it's up to Earth's mightiest heroes to stop the villainous Ultron from enacting his terrible plan.",
+    img: "",
+    rating: 8.2,
+    director: "director here",
+    actors: "actors here"
+})
+
+const captainWinterSoldier = new Movie({
+    name: "Captain America: The Winter Soldier",
+    description: "As Steve Rogers struggles to embrace his role in the modern world, he teams up with a fellow Avenger and S.H.I.E.L.D agent, Black Widow, to battle a new threat from history: an assassin known as the Winter Soldier.",
+    img: "",
+    rating: 8.0,
+    director: "director here",
+    actors: "actors here"
+})
+
+const captainCivilWar = new Movie({
+    name: "Captain America: Civil War",
+    description: "Political involvement in the Avengers' activities causes a rift between Captain America and Iron Man.",
+    img: "",
+    rating: 8.2,
+    director: "director here",
+    actors: "actors here"
+})
+
+const avengersInfinityWar = new Movie({
+    name: "Avengers: Infinty War",
+    description: "The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.",
+    img: "",
+    rating: 8.8,
+    director: "director here",
+    actors: "actors here"
+})
+
+const guardians = new Movie({
+    name: "Guardians of the Galaxy",
+    description: "A group of intergalactic criminals are forced to work together to stop a fanatical warrior from taking control of the universe.",
+    img: "",
+    rating: 8.3,
+    director: "director here",
+    actors: "actors here"
+})
+
+const guardiansTwo = new Movie({
+    name: "Guardians of the Galaxy Vol. 2",
+    description: "The Guardians must fight to keep their newfound family together as they unravel the mystery of Peter Quill's true parentage.",
+    img: "",
+    rating: 8.1,
+    director: "director here",
+    actors: "actors here"
+})
+
