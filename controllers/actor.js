@@ -4,25 +4,37 @@ const Movie = require('../models/Movie')
 
 const actorController = {
     index: (req, res) => {
-        res.send('this is main index')
+        Actor.find()
+            .then(actors => {
+                res.render('/actors', {actors: actors})
+            })
     },
     show: (req, res) => {
-        res.send('this is show actor page')
+        Actor.findById(req.params.actorId).populate('movies', 'name').then(actor => {
+            res.render('/actors/show', {actor: actor})
+        })
     },
     new: (req, res) => {
-        res.send('create a new actor')
+        res.render('/actors/new')
     },
     create: (req, res) => {
-        res.send('magic')
+        Actor.create(req.body).then(newActor =>
+            res.redirect(`/${newActor._id}`))
     },
     edit: (req, res) => {
-        res.send('edit actor here')
+        Actor.findById(req.params.actorId).then(actor => {
+            res.render(`/actors/edit`, {actor: actor})
+        })
     },
     update: (req, res) => {
-        res.send('update magic')
+        Actor.findByIdAndUpdate(req.params.actorId, req.body).then(updatedActor => {
+            res.redirect(`/actors/${updatedActor}`)
+        })
     },
     delete: (req, res) => {
-        res.send('delete this')
+        Actor.findByIdAndDelete(req.params.actorId).then(() => {
+            res.redirect('/actors')
+        })
     }
 }
 
