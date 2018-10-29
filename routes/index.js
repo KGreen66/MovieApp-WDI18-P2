@@ -30,3 +30,5 @@ router.get('/directors/:directorId/edit', directorController.edit)
 router.put('/directors/:directorId', directorController.update)
 router.patch('/directors/:directorId', directorController.update)
 router.delete('/directors/:directorId', directorController.delete)
+
+module.exports = router
