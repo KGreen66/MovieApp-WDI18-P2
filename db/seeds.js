@@ -127,8 +127,8 @@ const ironMan = new Movie({
     description: "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.",
     img: "",
     rating: 7.9,
-    director: "director here",
-    actors: "actors here"
+    director: [jonFavreau],
+    actors: [robertDowney]
 })
 
 const ironManTwo = new Movie({
@@ -136,8 +136,8 @@ const ironManTwo = new Movie({
     description: "With the world now aware of his identity as Iron Man, Tony Stark must contend with both his declining health and a vengeful mad man with ties to his father's legacy.",
     img: "",
     rating: 7.3,
-    director: "director here",
-    actors: "actors here"
+    director: [jonFavreau],
+    actors: [robertDowney, donCheadle, scarlettJohannson]
 })
 
 const avengers = new Movie({
@@ -145,8 +145,8 @@ const avengers = new Movie({
     description: "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
     img: "",
     rating: 8.4,
-    director: "director here",
-    actors: "actors here"
+    director: [jossWhedon],
+    actors: [chrisEvans, chrisHemsworth, robertDowney, scarlettJohannson, markRuffalo, tomHiddleston]
 })
 
 const avengersAoA = new Movie({
@@ -154,8 +154,8 @@ const avengersAoA = new Movie({
     description: "When Tony Stark and Bruce Banner try to jump-start a dormant peacekeeping program called Ultron, things go horribly wrong and it's up to Earth's mightiest heroes to stop the villainous Ultron from enacting his terrible plan.",
     img: "",
     rating: 8.2,
-    director: "director here",
-    actors: "actors here"
+    director: [jossWhedon],
+    actors: [chrisEvans, robertDowney, markRuffalo, scarlettJohannson, chrisHemsworth, donCheadle, elizabethOlsen]
 })
 
 const captainWinterSoldier = new Movie({
@@ -163,8 +163,8 @@ const captainWinterSoldier = new Movie({
     description: "As Steve Rogers struggles to embrace his role in the modern world, he teams up with a fellow Avenger and S.H.I.E.L.D agent, Black Widow, to battle a new threat from history: an assassin known as the Winter Soldier.",
     img: "",
     rating: 8.0,
-    director: "director here",
-    actors: "actors here"
+    director: [anthonyRusso, joeRusso],
+    actors: [chrisEvans, scarlettJohannson]
 })
 
 const captainCivilWar = new Movie({
@@ -172,8 +172,8 @@ const captainCivilWar = new Movie({
     description: "Political involvement in the Avengers' activities causes a rift between Captain America and Iron Man.",
     img: "",
     rating: 8.2,
-    director: "director here",
-    actors: "actors here"
+    director: [anthonyRusso, joeRusso],
+    actors: [chrisEvans, robertDowney, donCheadle, elizabethOlsen, scarlettJohannson]
 })
 
 const avengersInfinityWar = new Movie({
@@ -181,8 +181,8 @@ const avengersInfinityWar = new Movie({
     description: "The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.",
     img: "",
     rating: 8.8,
-    director: "director here",
-    actors: "actors here"
+    director: [anthonyRusso, joeRusso],
+    actors: [chrisEvans, chrisHemsworth, zoeSaldana, robertDowney, tomHiddleston, donCheadle, elizabethOlsen, markRuffalo, scarlettJohannson, benedictCumberbatch]
 })
 
 const guardians = new Movie({
@@ -190,8 +190,8 @@ const guardians = new Movie({
     description: "A group of intergalactic criminals are forced to work together to stop a fanatical warrior from taking control of the universe.",
     img: "",
     rating: 8.3,
-    director: "director here",
-    actors: "actors here"
+    director: [jamesGunn],
+    actors: [zoeSaldana]
 })
 
 const guardiansTwo = new Movie({
@@ -199,7 +199,7 @@ const guardiansTwo = new Movie({
     description: "The Guardians must fight to keep their newfound family together as they unravel the mystery of Peter Quill's true parentage.",
     img: "",
     rating: 8.1,
-    director: "director here",
-    actors: "actors here"
+    director: [jamesGunn],
+    actors: [zoeSaldana]
 })
 
