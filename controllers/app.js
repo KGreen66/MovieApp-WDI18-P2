@@ -12,10 +12,13 @@ const applicationController = {
             })
     },
     show: (req, res) => {
-        res.send('this is show movie page')
+        Movie.findById(req.params.movieId).then(movie => {
+            res.render('movies/show', {movie: movie})
+          })
     },
     new: (req, res) => {
-        res.send('create a new movie')
+        Movie.create(req.body).then(newMovie =>
+            res.redirect(`/${newMovie._id}`))
     },
     create: (req, res) => {
         res.send('magic')

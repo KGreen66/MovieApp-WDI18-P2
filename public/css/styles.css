@@ -21,6 +21,22 @@ img {
     width: auto;
 }
 
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+header button {
+    margin-top: 18px;
+    line-height: 30px;
+    background: rgb(6, 6, 83);
+    color: whitesmoke;
+    border-color: maroon;
+    padding: 0 20px;
+    font-size: 18px;
+}
+
 .movie-container {
     margin: 5px;
     display: inline-block;

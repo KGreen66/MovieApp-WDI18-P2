@@ -1,6 +1,8 @@
 <main>
-    <h2>Movie Index</h2>
-
+    <header>
+        <h2>Movie Index</h2>
+        <a href="/new"><button>Create new movie</button></a>
+    </header>
     {{#each movies}}
         <div class="movie-container">
             <a href="/{{_id}}"><img src="{{img}}" alt=""></a>
