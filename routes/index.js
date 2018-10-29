@@ -1,0 +1,22 @@
+const express = require('express')
+const router = express.Router()
+const applicationController = require('../controllers/app')
+const directorController = require('../controllers/director')
+const actorController = require('../controllers/actor')
+
+router.get('/', applicationController.index)
+router.get('/:movieId', applicationController.show)
+router.get('/new', applicationController.new)
+router.post('/', applicationController.create)
+router.get('/:movieId/edit', applicationController.edit)
+router.put('/:movieId', applicationController.update)
+router.delete('/:movieId', applicationController.delete)
+
+router.get('/actors', actorController.index)
+router.get('/actors/:actorId', actorController.show)
+router.get('/actors/new', actorController.new)
+router.post('/actors', actorController.create)
+router.get('/actors/:actorId/edit', actorController.edit)
+router.put('/actors/:actorId', actorController.update)
+router.delete('/actors/:actorId', actorController.delete)
+
