@@ -7,119 +7,119 @@ const robertDowney = new Actor({
     name: "Robert Downey Jr.",
     bio: "Robert Downey Jr. has evolved into one of the most respected actors in Hollywood. With an amazing list of credits to his name, he has managed to stay new and fresh even after over four decades in the business. Downey was born April 4, 1965 in Manhattan, New York",
     img: "https://i.imgur.com/0gQdQMb.jpg",
-    movies: `movies go here`
+    movies: []
 })
 
 // const ryanReynolds = new Actor({
 //     name: "Ryan Reynolds",
 //     bio: "bio goes here",
 //     img: "https://i.imgur.com/hHOLnLi.jpg",
-//     movies: "movies go here"
+//     movies: []
 // })
 
 const markRuffalo = new Actor({
     name: "Mark Ruffalo",
     bio: "Mark Ruffalo was born November 22, 1967 in Kenosha, Wisconsin. He took classes at the Stella Adler Conservatory and subsequently co-founded the Orpheus Theatre Company, an Equity-Waiver establishment, where he worked in nearly every capacity. From acting, writing, directing and producing to running the lights and building sets while building his resume. He had his first successes in theatre, before transitioning into film.",
     img: "https://i.imgur.com/cz6iomL.jpg",
-    movies: "movies go here"
+    movies: []
 })
 
 const chrisEvans = new Actor({
     name: "Chris Evans",
     bio: "Chris Evans was born June 13, 1981 in Boston, Massachusetts. He has an older sister, Carly Evans, and two younger siblings, a brother named Scott Evans, who is also an actor, and a sister named Shana Evans.",
     img: "https://i.imgur.com/JnrITob.jpg",
-    movies: "movies go here"
+    movies: []
 })
 
 const benedictCumberbatch = new Actor({
     name: "Benedict Cumberbatch",
     bio: "Benedict Timothy Carlton Cumberbatch was born July 19, 1976 and raised in London, England",
     img: "https://i.imgur.com/98c2B6C.jpg",
-    movies: "movies go here"
+    movies: []
 })
 
 const chrisHemsworth = new Actor({
     name: "Chris Hemsworth",
     bio: "Chris Hemsworth was born August 11, 1983 in Melbourne, Australia. Chris's American representative, management company ROAR, also manages actress Elsa Pataky, and it was through them that the two met, marrying in 2010. The couple have a daughter and twin sons.",
     img: "https://i.imgur.com/zxUiht9.jpg",
-    movies: "movies go here"
+    movies: []
 })
 
 const scarlettJohannson = new Actor({
     name: "Scarlett Johannson",
     bio: "Scarlett Johansson was born November 22, 1984 in New York City. She has a sister, Vanessa Johansson, who is also an actress, a brother, Adrian, a twin brother, Hunter Johansson, born three minutes after her, and a paternal half-brother, Christian. Her grandfather was writer Ejner Johansson.",
     img: "https://i.imgur.com/ylnGoLb.jpg",
-    movies: "movies go here"
+    movies: []
 })
 
 const donCheadle = new Actor({
     name: "Don Cheadle",
     bio: "Donald Frank Cheadle was born in Kansas City, Missouri on November 29, 1964. As a child, he moved around a lot with his family.",
     img: "https://i.imgur.com/6bvGXFn.jpg",
-    movies: "movies go here"
+    movies: []
 })
 
 const tomHiddleston = new Actor({
     name: "Tom Hiddleston",
     bio: "Thomas William Hiddleston was born February 9, 1981 in Westminster, London. He attended the University of Cambridge, where he earned a double first in Classics. He continued to study acting at the Royal Academy of Dramatic Art, from which he graduated in 2005.",
     img: "https://i.imgur.com/CHh9Vc8.jpg",
-    movies: "movies go here"
+    movies: []
 })
 
 const elizabethOlsen = new Actor({
     name: "Elizabeth Olsen",
     bio: "Elizabeth Chase 'Lizzie' Olsen (born February 16, 1989) is an American actress. She is known for her roles in the films, Silent House (2011), Liberal Arts (2012), Godzilla (2014), Avengers: Age of Ultron (2015) and Captain America: Civil War (2016).",
     img: "https://i.imgur.com/Jhqpf15.jpg",
-    movies: "movies go here"
+    movies: []
 })
 
 const zoeSaldana = new Actor({
     name: "Zoe Saldana",
     bio: "Zoe Saldana was born on June 19, 1978 in Passaic, New Jersey, to Asalia Nazario and Aridio Saldaña. Her father was Dominican and her mother is Puerto Rican. She was raised in Queens, New York.",
     img: "https://i.imgur.com/DjlVXJA.jpg",
-    movies: "movie here"
+    movies: []
 })
 
 const jonFavreau = new Director({
     name: "Jon Favreau",
     bio: "Initially an indie film favorite, actor Jon Favreau has progressed to strong mainstream visibility into the millennium and, after nearly two decades in the business, is still enjoying character stardom as well as earning notice as a writer/producer/director.",
     img: "https://i.imgur.com/77nhUZw.jpg",
-    movies: "movies here"
+    movies: []
 })
 
 const jossWhedon = new Director({
     name: "Joss Whedon",
     bio: "Joss Whedon is the middle of five brothers - his younger brothers are Jed Whedon and Zack Whedon. Both his father, Tom Whedon and his grandfather, John Whedon were successful television writers.",
     img: "https://i.imgur.com/CpeXzIy.jpg",
-    movies: "movies here"
+    movies: []
 })
 
 const anthonyRusso = new Director({
     name: "Anthony Russo",
     bio: "Anthony Russo was born on February 3, 1970 in Cleveland, Ohio, USA as Anthony J. Russo. He is a producer and director.",
     img: "https://i.imgur.com/ErK4U8R.jpg",
-    movies: "movies here"
+    movies: []
 })
 
 const joeRusso = new Director({
     name: "Joe Russo",
     bio: "Joe Russo was born on July 8, 1971 in Cleveland, Ohio, USA as Joseph Vincent Russo. He is a producer and director.",
     img: "https://i.imgur.com/2figsO5.jpg",
-    movies: "movies here"
+    movies: []
 })
 
 const jamesGunn = new Director({
     name: "James Gunn",
     bio: "James Gunn was born and raised in St. Louis, Missouri, to Leota and James Francis Gunn. He is from a large Catholic family, with Irish and Czech ancestry. His father and his uncles were all lawyers. He has been writing and performing as long as he can remember. He began making 8mm films at the age of twelve.",
     img: "https://i.imgur.com/HLWtQwX.jpg",
-    movies: "movies here"
+    movies: []
 })
 
 // const  = new Director({
 //     name: ,
 //     bio: "bio goes here",
 //     img: ,
-//     movies: "movies here"
+//     movies: []
 // })
 
 const ironMan = new Movie({
