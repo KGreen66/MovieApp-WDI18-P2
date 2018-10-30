@@ -20,7 +20,7 @@ const applicationController = {
         res.render('movies/new')
     },
     create: (req, res) => {
-        Movie.create(req.body).then(newMovie =>
+        Movie.create(req.body, {director: Director}, {actors: Actor}).then(newMovie =>
             res.redirect(`/${newMovie._id}`))
     },
     edit: (req, res) => {
@@ -34,7 +34,7 @@ const applicationController = {
         })
     },
     delete: (req, res) => {
-        Movie.findByIdAndDelete(req.params.movieId).then(() => {
+        Movie.findByIdAndRemove(req.params.movieId).then(() => {
             res.redirect('/')
         })
     }

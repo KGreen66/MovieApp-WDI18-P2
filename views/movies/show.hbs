@@ -12,7 +12,7 @@
     </div>
     <div class="movie-show-functions">
         <a href="/{{movie._id}}/edit"><button>Edit this movie</button></a>
-	    <form action="/recipe/{{movie._id}}?_method=DELETE" method="POST">
+	    <form action="/{{movie._id}}?_method=DELETE" method="POST">
 	        <button type="submit">Delete this movie</button>
 	    </form>
     </div>

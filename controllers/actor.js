@@ -32,7 +32,7 @@ const actorController = {
         })
     },
     delete: (req, res) => {
-        Actor.findByIdAndDelete(req.params.actorId).then(() => {
+        Actor.findByIdAndRemove(req.params.actorId).then(() => {
             res.redirect('actors')
         })
     }

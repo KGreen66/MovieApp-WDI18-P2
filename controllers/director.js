@@ -18,7 +18,7 @@ const directorController = {
         res.render('directors/new')
     },
     create: (req, res) => {
-        Director.create(req.body).then(newDirector =>
+        Director.create(req.body, {movies: Movie}).then(newDirector =>
             res.redirect(`/${newDirector._id}`))
     },
     edit: (req, res) => {
@@ -32,7 +32,7 @@ const directorController = {
         })
     },
     delete: (req, res) => {
-        Director.findByIdAndDelete(req.params.directorId).then(() => {
+        Director.findByIdAndRemove(req.params.directorId).then(() => {
             res.redirect('/directors')
         })
     }
