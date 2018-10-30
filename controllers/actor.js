@@ -19,7 +19,7 @@ const actorController = {
     },
     create: (req, res) => {
         Actor.create(req.body).then(newActor =>
-            res.redirect(`/${newActor._id}`))
+            res.redirect(`/actors/${newActor._id}`))
     },
     edit: (req, res) => {
         Actor.findById(req.params.actorId).then(actor => {

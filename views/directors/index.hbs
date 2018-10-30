@@ -1,13 +1,13 @@
 <main>
     <header>
         <h2>Director Index</h2>
-        <a href="/director/new"><button>Add new director</button></a>
+        <a href="/directors/new"><button>Add new director</button></a>
     </header>
     {{#each directors}}
         <div class="director-container">
-            <a href="/{{_id}}"><img src="{{img}}" alt=""></a>
+            <a href="/directors/{{_id}}"><img src="{{img}}" alt=""></a>
             <div class="director-container-info">
-                <a href="/{{_id}}"><h3>{{name}}</h3></a>
+                <a href="/directors/{{_id}}"><h3>{{name}}</h3></a>
                 <p>{{bio}}</p>
                 <p>{{movies}}</p>
             </div>

@@ -7,8 +7,19 @@
         <img src="{{movie.img}}" alt="">
         <p>Movie Description: {{movie.description}} </p>
         <p>Release Date: {{movie.release}} </p>
-        <p>Directed by: {{movie.director}} </p>
-        <p>Cast: {{movie.actors}} </p>
+        <p>Directed by:</p>
+        <ul>
+            {{#each movie.director}}
+                <a href="/directors/{{director._id}}"><li>{{name}}</li></a>
+            {{/each}}
+        </ul>
+        <p>Cast:</p>
+        <ul>
+            {{#each movie.actors}}
+                <a href="/actors/{{actor._id}}"><li>{{name}}</li></a>
+            {{/each }}                        
+        </ul>
+
     </div>
     <div class="movie-show-functions">
         <a href="/{{movie._id}}/edit"><button>Edit this movie</button></a>
