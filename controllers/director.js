@@ -6,16 +6,16 @@ const directorController = {
     index: (req, res) => {
         Director.find()
             .then(directors => {
-                res.render('/directors', {directors: directors})
+                res.render('directors/index', {directors: directors})
             })
     },
     show: (req, res) => {
         Director.findById(req.params.directorId).populate('movies', 'name').then(director => {
-            res.render('/directors/show', {director: director})
+            res.render('directors/show', {director: director})
         })
     },
     new: (req, res) => {
-        res.render('/directors/new')
+        res.render('directors/new')
     },
     create: (req, res) => {
         Director.create(req.body).then(newDirector =>
@@ -23,7 +23,7 @@ const directorController = {
     },
     edit: (req, res) => {
         Director.findById(req.params.directorId).then(director => {
-            res.render(`/directors/edit`, {director: director})
+            res.render(`directors/edit`, {director: director})
         })
     },
     update: (req, res) => {
