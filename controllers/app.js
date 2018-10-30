@@ -12,7 +12,7 @@ const applicationController = {
             })
     },
     show: (req, res) => {
-        Movie.findById(req.params.movieId).populate('actors', 'name').populate('director', 'name').then(movie => {
+        Movie.findById(req.params.movieId).populate('actors').populate('director').then(movie => {
             res.render('movies/show', {movie: movie})
           })
     },
@@ -20,7 +20,7 @@ const applicationController = {
         res.render('movies/new')
     },
     create: (req, res) => {
-        Movie.create(req.body, {director: Director}, {actors: Actor}).then(newMovie =>
+        Movie.create(req.body).then(newMovie =>
             res.redirect(`/${newMovie._id}`))
     },
     edit: (req, res) => {
