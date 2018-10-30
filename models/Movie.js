@@ -8,11 +8,11 @@ const Movie = new Schema({
     img: String,
     rating: Number,
     director: [{
-        type: String,
+        type: Schema.Types.ObjectId,
         ref: 'Director'
     }],
     actors: [{
-        type: String,
+        type: Schema.Types.ObjectId,
         ref: 'Actor'
     }]
 })
