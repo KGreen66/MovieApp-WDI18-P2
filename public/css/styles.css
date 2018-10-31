@@ -17,7 +17,7 @@ nav h3 {
 }
 
 img {
-    height: 40%;
+    height: 30%;
     width: auto;
 }
 
@@ -40,7 +40,7 @@ header button {
 .main-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 
+    grid-template-rows: 25% 25% 25% 25%;
 }
 
 .movie-container {
