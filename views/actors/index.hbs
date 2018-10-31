@@ -1,0 +1,15 @@
+<main>
+    <header>
+        <h2>Actor Index</h2>
+        <a href="/actors/new"><button>Add new director</button></a>
+    </header>
+    {{#each actors}}
+        <div class="actor-container">
+            <a href="/actors/{{_id}}"><img src="{{img}}" alt=""></a>
+            <div class="actor-container-info">
+                <a href="/actors/{{_id}}"><h3>{{name}}</h3></a>
+            </div>
+        </div>
+    {{/each}}
+    
+</main>

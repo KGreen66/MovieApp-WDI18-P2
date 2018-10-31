@@ -2,6 +2,15 @@ const mongoose = require('./connection')
 const Actor = require('../models/Actor')
 const Director = require('../models/Director')
 const Movie = require('../models/Movie')
+// var avengers
+// var avengersAoA
+// var avengersInfinityWar
+// var guardians
+// var guardiansTwo
+// var ironMan
+// var ironManTwo
+// var captainWinterSoldier
+// var captainCivilWar
 
 const robertDowney = new Actor({
     name: "Robert Downey Jr.",
@@ -115,13 +124,6 @@ const jamesGunn = new Director({
     movies: []
 })
 
-// const  = new Director({
-//     name: ,
-//     bio: "bio goes here",
-//     img: ,
-//     movies: []
-// })
-
 var ironMan = new Movie({
     name: "Iron Man",
     description: "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.",
@@ -212,10 +214,25 @@ var guardiansTwo = new Movie({
     actors: [zoeSaldana]
 })
 
-Director.remove()
+Director.remove({})
+    .then(() => jonFavreau.movies.push(ironMan, ironManTwo))
+    .then(() => jossWhedon.movies.push(avengers, avengersAoA))
+    .then(() => anthonyRusso.movies.push(captainWinterSoldier, captainCivilWar, avengersInfinityWar))
+    .then(() => joeRusso.movies.push(captainWinterSoldier, captainCivilWar, avengersInfinityWar))
+    .then(() => jamesGunn.movies.push(guardians, guardiansTwo))
 
-Actor.remove()
-
+Actor.remove({})
+    .then(() => tomHiddleston.movies.push(avengers, avengersInfinityWar))
+    .then(() => robertDowney.movies.push(ironMan, ironManTwo, avengers, avengersAoA, avengersInfinityWar, captainCivilWar))
+    .then(() => scarlettJohannson.movies.push(captainCivilWar, avengers, avengersAoA, avengersInfinityWar, captainWinterSoldier))
+    .then(() => chrisEvans.movies.push(avengers, avengersAoA, avengersInfinityWar, captainCivilWar, captainWinterSoldier))
+    .then(() => chrisHemsworth.movies.push(avengers, avengersAoA, avengersInfinityWar))
+    .then(() => zoeSaldana.movies.push(guardians, guardiansTwo, avengersInfinityWar))
+    .then(() => markRuffalo.movies.push(avengers, avengersAoA, avengersInfinityWar))
+    .then(() => donCheadle.movies.push(ironManTwo, avengersAoA, avengersInfinityWar, captainCivilWar))
+    .then(() => elizabethOlsen.movies.push(avengersAoA, avengersInfinityWar, captainCivilWar))
+    .then(() => benedictCumberbatch.movies.push(avengersInfinityWar))
+    
 Movie.remove({})
     .then(() => Director.insertMany([joeRusso, jonFavreau, anthonyRusso, jamesGunn, jossWhedon]))
     .then(() => Actor.insertMany([tomHiddleston, robertDowney, chrisEvans, chrisHemsworth, scarlettJohannson, zoeSaldana, markRuffalo, donCheadle, elizabethOlsen, benedictCumberbatch]))
@@ -228,5 +245,6 @@ Movie.remove({})
     .then(() => captainCivilWar.save())
     .then(() => ironMan.save())
     .then(() => ironManTwo.save())
+    
     .then(() => console.log("Database seeded successfully"))
     .then(() => mongoose.connection.close())

@@ -10,13 +10,13 @@
         <p>Directed by:</p>
         <ul>
             {{#each movie.director}}
-                <a href="/directors/{{director._id}}"><li>{{name}}</li></a>
+                <a href="/directors/{{_id}}"><li>{{name}}</li></a>
             {{/each}}
         </ul>
         <p>Cast:</p>
         <ul>
             {{#each movie.actors}}
-                <a href="/actors/{{actor._id}}"><li>{{name}}</li></a>
+                <a href="/actors/{{_id}}"><li>{{name}}</li></a>
             {{/each }}                        
         </ul>
 

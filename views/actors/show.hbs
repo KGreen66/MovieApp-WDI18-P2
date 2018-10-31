@@ -1,0 +1,21 @@
+<main>
+    <div class="actor-container-show">
+        <header>
+            <h2> {{actor.name}} </h2>
+        </header>
+        <img src="{{actor.img}}" alt="">
+        <p>Bio: {{actor.bio}} </p>
+        <p>Movies: </p>
+        <ul>
+            {{#each actor.movies}}
+                <a href="/{{_id}}"><li>{{img}}{{name}}</li></a>
+            {{/each}}
+        </ul>
+    </div>
+    <div class="actor-show-functions">
+        <a href="/actors/{{actor._id}}/edit"><button>Edit this actor</button></a>
+	    <form action="/actors/{{actor._id}}?_method=DELETE" method="POST">
+	        <button type="submit">Delete this actor</button>
+	    </form>
+    </div>
+</main>

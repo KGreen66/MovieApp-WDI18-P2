@@ -30,7 +30,7 @@ const applicationController = {
     },
     update: (req, res) => {
         Movie.findByIdAndUpdate(req.params.movieId, req.body).then(updatedMovie => {
-            res.redirect(`/${updatedMovie}`)
+            res.redirect(`/${updatedMovie._id}`)
         })
     },
     delete: (req, res) => {

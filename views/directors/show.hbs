@@ -1,0 +1,21 @@
+<main>
+    <div class="director-container-show">
+        <header>
+            <h2> {{director.name}} </h2>
+        </header>
+        <img src="{{director.img}}" alt="">
+        <p>Bio: {{director.bio}} </p>
+        <p>Movies directed: </p>
+        <ul>
+            {{#each director.movies}}
+                <a href="/{{_id}}"><li>{{img}}{{name}}</li></a>
+            {{/each}}
+        </ul>
+    </div>
+    <div class="director-show-functions">
+        <a href="/directors/{{director._id}}/edit"><button>Edit this director</button></a>
+	    <form action="/directors/{{director._id}}?_method=DELETE" method="POST">
+	        <button type="submit">Delete this director</button>
+	    </form>
+    </div>
+</main>

@@ -1,10 +1,10 @@
 <main>
 
-	<h2>Edit this movie</h2>
+	<h2>Edit {{movie.name}}</h2>
 
 	<div id="edit-form" class="newMovie-container-show">
 
-		<form action="/{{movie._id}}?_method=PUT" method="POST" class="edit-movie">
+		<form action="/{{movie._id}}?_method=PATCH" method="POST" class="edit-movie">
 			<input type="text" name="name" value="{{movie.name}}">
 			<input type="text" name="description" value="{{movie.description}}">
 			<input type="text" name="release" value="{{movie.release}}">
