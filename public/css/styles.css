@@ -92,16 +92,45 @@ button {
     font-size: 18px;
 }
 
+.actor-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 1424px;
+}
+
 .actor-container {
     margin: 5px;   
     border: 5px solid black;
     border-radius: 8px;
+    width: 450px;
+    height: 400px;
+}
+
+.actor-container img {
+    height: 60%;
+    width: auto;
+}
+
+.director-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 1424px;
 }
 
 .director-container {
     margin: 5px;   
     border: 5px solid black;
     border-radius: 8px;
+    width: 690px;
+    height: 400px;
+    align-content: center;
+}
+
+.director-container img {
+    height: 80%;
+    width: auto;
 }
 
 @media (max-width: 1200px) {
