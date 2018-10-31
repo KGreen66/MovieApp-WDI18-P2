@@ -10,7 +10,7 @@ const directorController = {
             })
     },
     show: (req, res) => {
-        Director.findById(req.params.directorId).populate(Movie.director, director._id).then(director => {
+        Director.findById(req.params.directorId).populate('movies').then(director => {
             res.render('directors/show', {director: director})
         })
     },

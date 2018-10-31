@@ -5,12 +5,12 @@
             <h2> {{movie.rating}} </h2>
         </header>
         <img src="{{movie.img}}" alt="">
-        <p>Movie Description: {{movie.description}} </p>
+        <p>Movie Description: <br> {{movie.description}} </p>
         <p>Release Date: {{movie.release}} </p>
         <p>Directed by:</p>
         <ul>
             {{#each movie.director}}
-                <a href="/directors/{{_id}}"><li>{{name}}</li></a>
+                <a href="/directors/{{director._id}}"><li>{{name}}</li></a>
             {{/each}}
         </ul>
         <p>Cast:</p>
