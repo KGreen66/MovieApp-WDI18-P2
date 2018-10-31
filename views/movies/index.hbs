@@ -3,6 +3,7 @@
         <h2>Movie Index</h2>
         <a href="/new"><button>Add new movie</button></a>
     </header>
+    <div class="main-wrapper">
     {{#each movies}}
         <div class="movie-container">
             <a href="/{{_id}}"><img src="{{img}}" alt=""></a>
@@ -13,5 +14,5 @@
             </div>
         </div>
     {{/each}}
-    
+    </div>
 </main>

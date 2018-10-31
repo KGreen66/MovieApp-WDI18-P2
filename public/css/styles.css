@@ -17,7 +17,7 @@ nav h3 {
 }
 
 img {
-    height: 30%;
+    height: 40%;
     width: auto;
 }
 
@@ -37,9 +37,15 @@ header button {
     font-size: 18px;
 }
 
+.main-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 
+}
+
 .movie-container {
     margin: 5px;
-    display: inline-block;
+    display: inline-block;   
     border: 5px solid black;
     border-radius: 8px;
 }
